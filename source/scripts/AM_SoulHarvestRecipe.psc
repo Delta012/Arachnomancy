@@ -1,0 +1,14 @@
+Scriptname AM_SoulHarvestRecipe extends ObjectReference  
+
+FormList Property AM_DLC2ExpSpiderCrftRecipeSoulTrap Auto
+FormList Property DLC2ExpSpiderCraftingRecipesList Auto
+FormList Property DLC2ExpSpiderCraftingResultsList Auto
+
+Scroll Property AM_DLC2ExpSpiderSoulTrapScroll Auto
+
+Event OnRead()
+
+	DLC2ExpSpiderCraftingRecipesList.AddForm(AM_DLC2ExpSpiderCrftRecipeSoulTrap)
+	DLC2ExpSpiderCraftingResultsList.AddForm(AM_DLC2ExpSpiderSoulTrapScroll)
+
+EndEvent
